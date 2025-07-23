@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | Virosec</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script defer src="scripts/main.js"></script>
+  <style>
+    .services-section {
+      margin-top: 100px;
+      padding: 4rem 2rem;
+      background-color: #101010;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .card {
+      background-color: #1c1c1c;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #0ff3;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #0ff;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #0ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Virosec</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Services Cards -->
+  <section class="services-section">
+    <div class="card">
+      <h2>🛡️ Penetration Testing</h2>
+      <p>Test vulnerabilities and simulate cyber attacks.</p>
+      <a href="penetration.html">Read more →</a>
+    </div>
+    <div class="card">
+      <h2>🧠 Threat Intelligence</h2>
+      <p>Identify, analyze, and monitor digital threats.</p>
+      <a href="threat-intel.html">Read more →</a>
+    </div>
+    <div class="card">
+      <h2>🔍 Digital Forensics</h2>
+      <p>Investigate incidents and analyze digital evidence.</p>
+      <a href="forensics.html">Read more →</a>
+    </div>
+    <div class="card">
+      <h2>⚙️ Malware Analysis</h2>
+      <p>Reverse engineer and analyze malicious code.</p>
+      <a href="malware.html">Read more →</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Virosec. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
