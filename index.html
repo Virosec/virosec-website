@@ -1,30 +1,56 @@
-<!-- File: index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Virosec | Cyber Security</title>
+
+  <!-- رابط ملف CSS -->
   <link rel="stylesheet" href="styles/style.css" />
+
+  <!-- رابط ملف JavaScript -->
   <script defer src="scripts/main.js"></script>
 </head>
 <body>
+
+  <!-- ===== Hero Section with Video Background ===== -->
   <div class="hero-section">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="assets/videos/cyber-bg.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
     <div class="overlay"></div>
-    <h1 class="main-title">Virosec</h1>
-    <p class="subtitle">Cyber Security | Ethical Hacking | Digital Forensics</p>
-    <a href="#services" class="scroll-down">Explore ↓</a>
+    <div class="hero-content">
+      <h1 class="main-title">Virosec</h1>
+      <p class="subtitle">Cyber Security | Digital Defense | Ethical Hacking</p>
+      <a href="#services" class="scroll-down">Explore ↓</a>
+    </div>
   </div>
 
+  <!-- ===== Services Section ===== -->
   <section id="services" class="content-section">
-    <div class="card"><h2>🛡️ Penetration Testing</h2><p>Test vulnerabilities like a pro.</p></div>
-    <div class="card"><h2>🧠 Threat Intelligence</h2><p>Know your enemy before they know you.</p></div>
-    <div class="card"><h2>🔍 Digital Forensics</h2><p>Recover and analyze digital evidence.</p></div>
-    <div class="card"><h2>⚙️ Malware Analysis</h2><p>Reverse engineering dark code.</p></div>
+    <div class="card">
+      <h2>🛡️ Penetration Testing</h2>
+      <p>Test for vulnerabilities and strengthen your defenses.</p>
+    </div>
+    <div class="card">
+      <h2>🧠 Threat Intelligence</h2>
+      <p>Track and respond to emerging cyber threats.</p>
+    </div>
+    <div class="card">
+      <h2>🔍 Digital Forensics</h2>
+      <p>Recover and analyze compromised digital evidence.</p>
+    </div>
+    <div class="card">
+      <h2>⚙️ Malware Analysis</h2>
+      <p>Reverse engineer malicious software for prevention.</p>
+    </div>
   </section>
 
+  <!-- ===== Footer ===== -->
   <footer>
     <p>&copy; 2025 Virosec. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
