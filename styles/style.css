@@ -1,4 +1,4 @@
-/* Reset & Base Styles */
+/* ========== Reset & Base ========== */
 * {
   margin: 0;
   padding: 0;
@@ -12,29 +12,64 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== Hero Section with Video Background ===== */
+/* ========== Navbar ========== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  color: #0ff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #0ff;
+}
+
+/* ========== Hero Section ========== */
 .hero-section {
   position: relative;
   height: 100vh;
-  width: 100%;
+  margin-top: 80px;
   overflow: hidden;
 }
 
 .bg-video {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   object-fit: cover;
-  z-index: 0;
   filter: brightness(0.4);
+  z-index: 0;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0,0,0,0.9));
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.85));
   z-index: 1;
 }
 
@@ -70,7 +105,7 @@ body {
   animation: bounce 2s infinite;
 }
 
-/* ===== Services Section ===== */
+/* ========== Services Section ========== */
 .content-section {
   padding: 4rem 2rem;
   background-color: #101010;
@@ -80,7 +115,7 @@ body {
 }
 
 .card {
-  background: #1c1c1c;
+  background-color: #1c1c1c;
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 0 10px #0ff3;
@@ -92,7 +127,15 @@ body {
   box-shadow: 0 0 20px #0ff;
 }
 
-/* ===== Footer ===== */
+.card-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ========== Footer ========== */
 footer {
   padding: 1rem;
   text-align: center;
@@ -101,7 +144,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ===== Animations ===== */
+/* ========== Animations ========== */
 @keyframes neonPulse {
   from { text-shadow: 0 0 10px #0ff; }
   to   { text-shadow: 0 0 20px #0ff, 0 0 40px #0ff; }
