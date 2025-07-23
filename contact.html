@@ -3,55 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact | Virosec</title>
+  <title>Contact Info | Virosec</title>
   <link rel="stylesheet" href="styles/style.css" />
-  <script defer src="scripts/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
-    .contact-section {
-      margin-top: 100px;
-      padding: 4rem 2rem;
+    body {
       background-color: #101010;
-      color: #e0e0e0;
-      animation: fadeIn 1s ease-in-out;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
 
-    .contact-section h1 {
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #000;
+    }
+
+    .navbar .logo {
+      font-size: 1.8rem;
+      color: #0ff;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .nav-links a:hover {
+      color: #0ff;
+    }
+
+    .contact-container {
+      max-width: 800px;
+      margin: 4rem auto;
       text-align: center;
+      padding: 2rem;
+    }
+
+    .contact-container h1 {
       color: #0ff;
       margin-bottom: 2rem;
     }
 
-    .contact-form {
-      max-width: 600px;
-      margin: 0 auto;
+    .contact-item {
       display: flex;
-      flex-direction: column;
+      align-items: center;
       gap: 1rem;
+      margin: 1rem 0;
+      justify-content: center;
     }
 
-    .contact-form input,
-    .contact-form textarea {
-      padding: 1rem;
-      background-color: #1c1c1c;
-      border: none;
-      border-radius: 8px;
-      color: #fff;
-      font-size: 1rem;
+    .contact-item a {
+      color: #0ff;
+      text-decoration: none;
+      font-size: 1.1rem;
     }
 
-    .contact-form button {
-      padding: 1rem;
-      background-color: #0ff;
-      border: none;
-      color: #000;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 8px;
-      transition: 0.3s;
+    .contact-item a:hover {
+      text-decoration: underline;
     }
 
-    .contact-form button:hover {
-      background-color: #00cccc;
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #000;
+      color: #999;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -68,19 +97,25 @@
     </ul>
   </nav>
 
-  <!-- Contact Form -->
-  <section class="contact-section">
-    <h1>Contact Us</h1>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="6" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+  <!-- Contact Info Section -->
+  <div class="contact-container">
+    <h1>Contact & Socials</h1>
+
+    <div class="contact-item"><i class="fab fa-github"></i><a href="https://github.com/Virosec" target="_blank">github.com/Virosec</a></div>
+    <div class="contact-item"><i class="fab fa-youtube"></i><a href="https://www.youtube.com/@virosec" target="_blank">youtube.com/@virosec</a></div>
+    <div class="contact-item"><i class="fab fa-facebook"></i><a href="https://www.facebook.com/ViroSecOfficial" target="_blank">facebook.com/ViroSecOfficial</a></div>
+    <div class="contact-item"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/company/virosec" target="_blank">LinkedIn Company</a></div>
+    <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:c.virosec@gmail.com">c.virosec@gmail.com</a></div>
+
+    <h2 style="margin-top: 3rem; color: #0ff;">Founder: Mohamed Ashraf Alnabtety</h2>
+    <div class="contact-item"><i class="fab fa-facebook"></i><a href="https://www.facebook.com/el.mohammed.12315111/" target="_blank">Facebook Profile</a></div>
+    <div class="contact-item"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/mohamedama/" target="_blank">LinkedIn Profile</a></div>
+    <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:eng.mohamedashrafalnabtety@gmail.com">eng.mohamedashrafalnabtety@gmail.com</a></div>
+    <div class="contact-item"><i class="fab fa-whatsapp"></i><a href="https://wa.me/201070698276" target="_blank">WhatsApp: +20 107 069 8276</a></div>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Virosec. All rights reserved.</p>
+    &copy; 2025 Virosec. All rights reserved.
   </footer>
 
 </body>
