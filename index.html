@@ -5,34 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Virosec</title>
   <link rel="stylesheet" href="styles/style.css" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    .services-section {
-      padding: 100px 20px;
-      background-color: #111;
-      color: #fff;
-      text-align: center;
-    }
-
-    .services-section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: #0ff;
-    }
-
-    .services-section p {
-      font-size: 1.2rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-  </style>
 </head>
 <body>
-
-  <!-- Header/Navbar -->
   <header>
     <nav class="navbar">
       <div class="logo">Virosec</div>
@@ -45,7 +19,6 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <div class="hero-section">
     <video autoplay muted loop playsinline class="bg-video">
       <source src="assets/videos/cyber-bg.mp4" type="video/mp4" />
@@ -59,11 +32,27 @@
     </div>
   </div>
 
-  <!-- Services Section (scroll target) -->
+  <!-- Services Section -->
   <section id="services" class="services-section">
     <h2>Our Services</h2>
-    <p>We provide Penetration Testing, Digital Forensics, Cybersecurity Consultation, and more services tailored for securing your digital infrastructure.</p>
+    <div class="services-container">
+      <div class="service-card">
+        <h3>Penetration Testing</h3>
+        <p>We simulate cyberattacks to find your vulnerabilities before real hackers do.</p>
+      </div>
+      <div class="service-card">
+        <h3>Ethical Hacking</h3>
+        <p>We legally hack into your systems to assess their security from a hacker’s perspective.</p>
+      </div>
+      <div class="service-card">
+        <h3>Digital Forensics</h3>
+        <p>We investigate digital crimes and retrieve lost or tampered data securely.</p>
+      </div>
+    </div>
   </section>
 
+  <footer>
+    <p style="text-align: center; padding: 20px; color: #999;">&copy; 2025 Virosec. All rights reserved.</p>
+  </footer>
 </body>
 </html>
